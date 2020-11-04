@@ -10,19 +10,10 @@ node() {
   }
 
   stage('Deploy to CF') {
-    cloudFoundryDeploy script: this,
-                       deployTool: 'mtaDeployPlugin', // cf_native or mtaDeployPlugin
-                       cloudFoundry: [
-                           org: 'OpenSAP-DEV',
-                           space: 'dev',
-                           credentialsId: 'cfDeploy',
-                       ]
+    cloudFoundryDeploy script: this
   }
 
   stage('Deploy to TMS') {
-    tmsUpload script: this,
-              mtaPath: 'DemoApp.mtar',
-              nodeName: 'OpenSAP_DEV',
-              credentialsId: 'tms'
+    tmsUpload script: this
   }
 }

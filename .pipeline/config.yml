@@ -1,0 +1,12 @@
+steps:
+  cloudFoundryDeploy:
+    deployTool: 'mtaDeployPlugin'
+    cloudFoundry:
+      org: 'OpenSAP-DEV'
+      space: 'dev'
+      credentialsId: 'cfDeploy'
+  tmsUpload:
+    mtaPath: 'DemoApp.mtar',
+    nodeName: 'OpenSAP_DEV',
+    credentialsId: 'tms'
+    
