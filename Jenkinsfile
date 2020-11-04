@@ -5,6 +5,6 @@ node() {
     deleteDir()
   }
   stage('Build') {
-    mtaBuild script: this
+    mtaBuild script: this, applicationName: 'myapp'
   }
 }
