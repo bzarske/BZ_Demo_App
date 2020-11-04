@@ -1,3 +1,5 @@
+general:
+  buildTool: 'mta'
 steps:
   cloudFoundryDeploy:
     deployTool: 'mtaDeployPlugin'
