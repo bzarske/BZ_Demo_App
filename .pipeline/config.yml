@@ -6,7 +6,7 @@ steps:
       space: 'dev'
       credentialsId: 'cfDeploy'
   tmsUpload:
-    mtaPath: 'DemoApp.mtar',
-    nodeName: 'OpenSAP_DEV',
+    mtaPath: 'DemoApp.mtar'
+    nodeName: 'OpenSAP_DEV'
     credentialsId: 'tms'
     
