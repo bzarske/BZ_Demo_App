@@ -8,4 +8,10 @@ node() {
   stage('Build') {
     mtaBuild script: this
   }
+  stage('Deploy') {
+    tmsUpload script: this,
+              mtaPath: 'DemoApp.mtar',
+              nodeName: 'OpenSAP_QA',
+              credentialsId: 'tms'
+  }
 }
