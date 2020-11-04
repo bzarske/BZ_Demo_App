@@ -1,4 +1,4 @@
-@Library('piper-lib-os@master')
+@Library('piper-lib-os@master') _
 node() {
   stage('Init') {
     echo "Hello World"
