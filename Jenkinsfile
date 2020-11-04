@@ -12,7 +12,7 @@ node() {
 
   stage('Deploy to CF') {
     cloudFoundryDeploy script: this,
-                       cloudFounrdy: [
+                       cloudFoundry: [
                            org: 'OpenSAP-DEV',
                            space: 'dev',
                            credentialsId: 'cfDeploy',
