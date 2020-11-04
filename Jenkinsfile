@@ -11,7 +11,7 @@ node() {
   stage('Deploy') {
     tmsUpload script: this,
               mtaPath: 'DemoApp.mtar',
-              nodeName: 'OpenSAP_QA',
+              nodeName: 'OpenSAP_DEV',
               credentialsId: 'tms'
   }
 }
