@@ -16,7 +16,7 @@ node() {
                            org: 'OpenSAP-DEV',
                            space: 'dev',
                            credentialsId: 'cfDeploy',
-                       ],
+                       ]
   }
 
   stage('Deploy to TMS') {
