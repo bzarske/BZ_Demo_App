@@ -2,7 +2,7 @@
 node() {
   stage('Init') {
     echo "Hello World"
-    deleteDir
+    deleteDir()
   }
   stage('Build') {
     mtaBuild script: this
