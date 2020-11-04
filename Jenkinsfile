@@ -12,7 +12,7 @@ node() {
 
   stage('Deploy to CF') {
     cloudFoundryDeploy script: this,
-                       deployTool: 'cf_native', // cf_native or mtaDeployPlugin
+                       deployTool: 'mtaDeployPlugin', // cf_native or mtaDeployPlugin
                        cloudFoundry: [
                            org: 'OpenSAP-DEV',
                            space: 'dev',
