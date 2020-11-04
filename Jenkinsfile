@@ -9,11 +9,11 @@ node() {
     mtaBuild script: this
   }
 
-  stage('Deploy to CF') {
-    cloudFoundryDeploy script: this
-  }
-
-  stage('Deploy to TMS') {
-    tmsUpload script: this
+  stage('Deploy') {
+    parallel cf: {
+      cloudFoundryDeploy script: this
+    }, tms: {
+      tmsUpload script: this
+    }
   }
 }
