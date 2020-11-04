@@ -9,15 +9,16 @@ node() {
   stage('Build') {
     mtaBuild script: this
   }
-/*
+
   stage('Deploy to CF') {
     cloudFoundryDeploy script: this,
                        cloudFounrdy: [
                            org: 'OpenSAP-DEV',
                            space: 'dev',
+                           credentialsId: 'cfDeploy',
                        ],
   }
-*/
+
   stage('Deploy to TMS') {
     tmsUpload script: this,
               mtaPath: 'DemoApp.mtar',
