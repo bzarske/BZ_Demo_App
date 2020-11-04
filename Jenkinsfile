@@ -4,6 +4,7 @@ node() {
     echo "Hello World"
     deleteDir()
     checkout scm
+    setupCommonPipelineEnvironment script: this
   }
   stage('Build') {
     mtaBuild script: this
