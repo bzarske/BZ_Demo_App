@@ -1,2 +1,2 @@
-@Library('piper-lib-os@master') _
+@Library('piper-lib-os') _
 piperPipeline script: this
