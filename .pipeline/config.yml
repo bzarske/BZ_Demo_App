@@ -1,16 +1,18 @@
 general:
   verbose: true
   buildTool: 'mta'
+stages:
+  Release:
+    cloudFoundryDeploy:
+      deployTool: 'mtaDeployPlugin'
+      mtaDeployParameters: '--version-rule ALL'
+      cloudFoundry:
+        org: 'OpenSAP-DEV'
+        space: 'dev'
+        credentialsId: 'cfDeploy'
 steps:
   artifactSetVersion:
     commitVersion: false
-  cloudFoundryDeploy:
-    deployTool: 'mtaDeployPlugin'
-    mtaDeployParameters: '--version-rule ALL'
-    cloudFoundry:
-      org: 'OpenSAP-DEV'
-      space: 'dev'
-      credentialsId: 'cfDeploy'
   tmsUpload:
     mtaPath: 'DemoApp.mtar'
     nodeName: 'OpenSAP_DEV'
