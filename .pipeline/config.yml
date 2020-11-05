@@ -1,6 +1,8 @@
 general:
   buildTool: 'mta'
 steps:
+  artifactSetVersion:
+    commitVersion: false
   cloudFoundryDeploy:
     deployTool: 'mtaDeployPlugin'
     cloudFoundry:
