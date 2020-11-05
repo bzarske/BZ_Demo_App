@@ -5,6 +5,7 @@ steps:
     commitVersion: false
   cloudFoundryDeploy:
     deployTool: 'mtaDeployPlugin'
+    mtaDeployParameters: '--version-rule ALL'
     cloudFoundry:
       org: 'OpenSAP-DEV'
       space: 'dev'
