@@ -2,13 +2,14 @@ general:
   buildTool: 'mta'
   manualConfirmation: false
 stages:
-  Release:
+  Acceptance:
     deployTool: 'mtaDeployPlugin'
     mtaDeployParameters: '--version-rule ALL'
     cloudFoundry:
       org: 'OpenSAP-DEV'
       space: 'dev'
       credentialsId: 'cfDeploy'
+  Release:
     mtaPath: 'DemoApp.mtar'
     nodeName: 'OpenSAP_DEV'
     credentialsId: 'tms'
