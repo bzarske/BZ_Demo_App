@@ -3,13 +3,12 @@ general:
   buildTool: 'mta'
 stages:
   Release:
-    cloudFoundryDeploy:
-      deployTool: 'mtaDeployPlugin'
-      mtaDeployParameters: '--version-rule ALL'
-      cloudFoundry:
-        org: 'OpenSAP-DEV'
-        space: 'dev'
-        credentialsId: 'cfDeploy'
+    deployTool: 'mtaDeployPlugin'
+    mtaDeployParameters: '--version-rule ALL'
+    cloudFoundry:
+      org: 'OpenSAP-DEV'
+      space: 'dev'
+      credentialsId: 'cfDeploy'
 steps:
   artifactSetVersion:
     commitVersion: false
