@@ -15,7 +15,4 @@
       "@sap/ui5-builder-webide-extension"
     ]
   },
-  "scripts": {
-		"test": "exit 0"
-  },
 }
