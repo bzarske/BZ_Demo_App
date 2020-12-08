@@ -11,7 +11,8 @@
   "scripts": {
     "build": "npm run clean && ui5 build --include-task=generateManifestBundle generateCachebusterInfo && npm run zip",
     "zip": "cd dist && npx bestzip ../HTML5Module-content.zip *",
-    "clean":"npx rimraf HTML5Module-content.zip dist" 
+    "clean":"npx rimraf HTML5Module-content.zip dist",
+    "test": "exit 0"
 },
   "ui5": {
     "dependencies": [
