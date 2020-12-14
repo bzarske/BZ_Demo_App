@@ -17,7 +17,6 @@ stages:
 steps:
   artifactSetVersion:
     commitVersion: false
-    tmsUpload:
-      nodeName: 'OpenSAP_QA'
-      credentialsId: 'tms'
-    
+  tmsUpload:
+    nodeName: 'OpenSAP_QA'
+    credentialsId: 'tms'
