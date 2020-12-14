@@ -1,4 +1,5 @@
 general:
+  verbose: true
   buildTool: 'mta'
   manualConfirmation: false
 stages:
