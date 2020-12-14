@@ -11,7 +11,7 @@ stages:
       space: 'dev'
       credentialsId: 'cfDeploy'
     mtaPath: 'DemoApp.mtar'
-    nodeName: 'OpenSAP_DEV'
+    nodeName: 'OpenSAP_QA'
     credentialsId: 'tms'
 steps:
   artifactSetVersion:
