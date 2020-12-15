@@ -17,3 +17,7 @@ stages:
 steps:
   artifactSetVersion:
     commitVersion: false
+  tmsUpload:
+    nodeName: 'OpenSAP_QA'
+    credentialsId: 'tms'
+    mtaPath: 'DemoApp.mtar'
