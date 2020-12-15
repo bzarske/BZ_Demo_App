@@ -10,6 +10,7 @@ stages:
       org: 'OpenSAP-DEV'
       space: 'dev'
       credentialsId: 'cfDeploy'
+    tmsUpload: true
     nodeName: 'OpenSAP_QA'
     credentialsId: 'tms'
     mtaPath: 'DemoApp.mtar'
